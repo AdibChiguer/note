@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EDEDF4;
+    font-family: "Roboto" , sans-serif ;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(111, 99, 99);
+    display: grid;
+    grid-template-columns: 1.1fr 5fr ;
+}
+
+.head{
+    width: 100%;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding:0 1.5rem ;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+/* note menu css */
+
+.notes-menu{
+    background: #67a7fb;
+    background: linear-gradient(9deg, rgba(103,167,251,1) 31%, rgba(82,151,235,1) 79%);
+    color: white;
+}
+
+.head button{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.head button i{
+    padding: 10px;
+    font-size: 1rem;
+    color: #67a7fb;
+}
+
+.titles{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.titles::-webkit-scrollbar{
+    width: 10px;
+}
+
+.titles::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+.titles::-webkit-scrollbar-thumb{
+    background-color: #67a7fb;
+    border-radius: 10px;
+}
+
+
+.head-note-title{
+    width: 100%;
+}
+
+.head-note-title button{
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.head-note-title:hover button{
+    background-color: white;
+    color: #67a7fb;
+}
+
+.copy-write{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(7deg, rgba(103,167,251,1) 31%, rgba(82,151,235,1) 79%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px;
+    align-items: center;
+}
+
+.copy-write p{
+    padding-left: 1rem;
+    text-transform: uppercase;
+}
+
+/* note area css */
+
+.note-area{
+    background-color: white;
+}
+
+.note-area .head {
+    color: #67a7fb;
+}
+
+.title-note{
+    padding: 0.5rem;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    color: #67a7fb;
+    display: none;
+}
+
+.title-note::placeholder{
+    color: #c2c2c2;
+}
+
+.change-btn{
+    display: flex;
+    display: none;
+}
+
+.note-area .head i{
+    font-size: 1.5rem;
+}
+
+.show-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.show-area svg{
+    width: 300px;
+    height: 300px;
+}
+
+.show-area h3{
+    text-transform: capitalize;
+}
+/* to hedde the svg area */
+.heddin-show-area{
+    display: none;
+}
+/* ---- */
+
+.text-typing-area{
+    width: 100%;
+    height: 80vh;
+}
+
+.text-typing-area textarea{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    resize: none;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    font-weight: bold;
+    font-family: "Roboto" ;
+    font-size: 1.1rem;
+}
+
+.text-typing-area textarea::placeholder{
+    opacity: 0.5;
+}
+
+/* to hedde the typing text area */
+.heddin-text-typing-area{
+    display: none;
+}
+/* ---- */
