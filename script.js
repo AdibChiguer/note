@@ -33,12 +33,10 @@ window.addEventListener('resize',function addMenuBtn(){
 menuBtn.addEventListener('click', function showSideMenu(){
     noteMEnu.classList.add('active-menu');
     noteMEnu.classList.remove('close-menu');
-    console.log('hi');
 })
 xmenuBtn.addEventListener('click', function showSideMenu(){
     noteMEnu.classList.add('close-menu');
     noteMEnu.classList.remove('active-menu');
-    console.log('by');
 })
 
 plusBtn.onclick = function (){
